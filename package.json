@@ -1,0 +1,29 @@
+{
+  version: "0.2.0",
+  name: "telstra-api",
+  description: "a package manager for JavaScript",
+  keywords: [
+    "install",
+    "modules",
+    "package manager",
+    "package.json"
+  ],
+  preferGlobal: true,
+  config: {
+    publishtest: false
+  },
+  homepage: "https://github.com/ozjd/Telstra-API",
+  author: "Joshua 'JD' Davison <joshua@davison.asia> (http://jd.davison.asia)",
+  repository: {
+    type: "git",
+    url: "https://github.com/ozjd/Telstra-API"
+  },
+  bugs: {
+    url: "https://github.com/ozjd/Telstra-API/issues"
+  },
+  directories: {
+    lib: "./lib",
+  },
+  main: "./t.api.js",
+  license: "Artistic-2.0"
+}
