@@ -32,13 +32,13 @@ var t = new TelstraAPI(CONSUMER_KEY, CONSUMER_SECRET, SCOPE);
 
 ### SMS API - t.sms
 
-#### t.sms.send(string <target>, string <message>);
+#### t.sms.send(string &lt;target&gt;, string &lt;message&gt;);
 - **target**: Australian telephone phone number to deliver SMS.
 - **message**: The message to be delivered.
 
 **Returns**: (String) The message ID of the pending SMS.
 
-#### t.sms.getFullReplies(String <messageId>);
+#### t.sms.getFullReplies(String &lt;messageId&gt;);
 **messageID**: The message ID received from a previous call to t.sms.send()
 
 **Returns**: An object containing:
@@ -48,7 +48,7 @@ var t = new TelstraAPI(CONSUMER_KEY, CONSUMER_SECRET, SCOPE);
 
 [\[Example Request &amp; Result\]](https://gist.github.com/ozjd/34f546812a709c490dc0)
 
-#### t.sms.getFullStatus(String <messageId>);
+#### t.sms.getFullStatus(String &lt;messageId&gt;);
 **messageID**: The message ID received from a previous call to t.sms.send()
 
 **Returns**: An object containing:
@@ -59,12 +59,12 @@ var t = new TelstraAPI(CONSUMER_KEY, CONSUMER_SECRET, SCOPE);
 
 [\[Example Request &amp; Result\]](https://gist.github.com/ozjd/29bba80b5ca882def733)
 
-#### t.sms.getReplies(String <messageId>);
+#### t.sms.getReplies(String &lt;messageId&gt;);
 **messageID**: The message ID received from a previous call to t.sms.send()
 
 **Returns**: An array of (String) **reply**s - See: t.sms.getFullReplies()
 
-#### t.sms.getStatus(String <messageId>);
+#### t.sms.getStatus(String &lt;messageId&gt;);
 **messageID**: The message ID received from a previous call to t.sms.send()
 
 **Returns**: (String) **status** - See: **status** in t.sms.getFullStatus()
@@ -73,7 +73,7 @@ var t = new TelstraAPI(CONSUMER_KEY, CONSUMER_SECRET, SCOPE);
 
 ### WiFi API - t.wifi
 
-##### t.wifi.getHotspots(Number <latitude>, Number <longitude>, Number [radius]);
+##### t.wifi.getHotspots(Number &lt;latitude&gt;, Number &lt;longitude&gt;, Number [radius]);
 Retrieves the location of nearby Telstra owned WiFi Hotspots in Australia ([Telstra AIR](https://www.telstra.com.au/broadband/telstra-air)).
 - **Latitude**: The latitude of the centre of the search area.
 - **Longitude**: The longitude of the centre of the search area.
@@ -94,7 +94,7 @@ Due to the asynchronous nature of this module, we have chosen to implement all m
 Here's a quick example on how to use a promise returned by a method in this module. For more information on Promises and their usage, please refer to [Promises on MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
 ```javascript
-t.<api>.<method>([arguments]).then(function (result) {
+t.&lt;api&gt;.&lt;method&gt;([arguments]).then(function (result) {
   //Successful call
   console.log("Result: " + result);
 }, function (error) {
