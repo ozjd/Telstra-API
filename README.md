@@ -28,7 +28,7 @@ TelstraAPI = require('telstra-api');
 var t = new TelstraAPI(CONSUMER_KEY, CONSUMER_SECRET, SCOPE);
 ```
 
-***NOTE:** It is important to make sure you're using the correct CONSUMER_KEY and CONSUMER_SECRET, as well as specifying only the scope(s) that your application has access to in the Telstra Developer Portal, as all authentication failures (not API errors) will result in a printed stack trace, and the application exiting.*
+**NOTE:** It is important to make sure you're using the correct CONSUMER_KEY and CONSUMER_SECRET, as well as specifying only the scope(s) that your application has access to in the Telstra Developer Portal, as all authentication failures (not API errors) will result in a printed stack trace, and the application exiting.*
 
 ### SMS API - t.sms
 
@@ -94,7 +94,7 @@ Due to the asynchronous nature of this module, we have chosen to implement all m
 Here's a quick example on how to use a promise returned by a method in this module. For more information on Promises and their usage, please refer to [Promises on MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
 ```javascript
-t.&lt;api&gt;.&lt;method&gt;([arguments]).then(function (result) {
+t.<api>.<method>([arguments]).then(function (result) {
   //Successful call
   console.log("Result: " + result);
 }, function (error) {
