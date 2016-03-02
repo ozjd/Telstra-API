@@ -1,17 +1,15 @@
 {
   version: "0.2.0",
   name: "telstra-api",
-  description: "a package manager for JavaScript",
+  description: "A node.js module for interfacing with the Telstra Dev APIs",
   keywords: [
-    "install",
-    "modules",
-    "package manager",
-    "package.json"
+    "Telstra",
+    "SMS",
+    "WiFi",
+    "Hotspot",
+    "Air"
   ],
-  preferGlobal: true,
-  config: {
-    publishtest: false
-  },
+  preferGlobal: false,
   homepage: "https://github.com/ozjd/Telstra-API",
   author: "Joshua 'JD' Davison <joshua@davison.asia> (http://jd.davison.asia)",
   repository: {
