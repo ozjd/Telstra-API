@@ -11,8 +11,8 @@
 
   TelstraAPI = (function() {
     function TelstraAPI(CONSUMER_KEY, CONSUMER_SECRET) {
-      this.CONSUMER_KEY = CONSUMER_KEY;
-      this.CONSUMER_SECRET = CONSUMER_SECRET;
+      this.CONSUMER_KEY = process.env.TELSTRA_API_CONSUMER_KEY;
+      this.CONSUMER_SECRET = process.env.TELSTRA_API_CONSUMER_SECRET;
       if ((this.CONSUMER_KEY == null) || (this.CONSUMER_SECRET == null)) {
         throw Error("[T.API] Init Error: CONSUMER_KEY or CONSUMER_SECRET missing");
       }
