@@ -1,4 +1,4 @@
-# Telstra-API - *v0.2*
+# Telstra-API - *v0.2.1*
 
 **Telstra-API** is a [node.js](https://nodejs.org/) module that takes the hard work out of using [Telstra Developer APIs](https://dev.telstra.com/).
 
@@ -18,14 +18,12 @@ $ npm install telstra-api
 ## Usage
 ```javascript
 // Obtain these keys from the Telstra Developer Portal
-CONSUMER_KEY = "U62RDEGRxb4Jw2p30oHkMnBLJaSJG5IS";
-CONSUMER_SECRET = "PTbyss26edeKr1cs";
-
-// Scope should contain a list of required APIs, seperated by a space (0x20).
-SCOPE = "SMS WIFI";
+export TELSTRA_API_CONSUMER_KEY = "U62RDEGRxb4Jw2p30oHkMnBLJaSJG5IS";
+export TELSTRA_API_CONSUMER_SECRET = "PTbyss26edeKr1cs";
+export TELSTRA_API_SCOPE = "SMS WIFI";
 
 TelstraAPI = require('telstra-api');
-var t = new TelstraAPI(CONSUMER_KEY, CONSUMER_SECRET, SCOPE);
+var t = new TelstraAPI();
 ```
 
 **NOTE:** It is important to make sure you're using the correct CONSUMER_KEY and CONSUMER_SECRET, as well as specifying only the scope(s) that your application has access to in the Telstra Developer Portal, as all authentication failures (not API errors) will result in a printed stack trace, and the application exiting.*
